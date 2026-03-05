@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Dashboard | Amandeep Singh</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="bg-blur bg-blur-1"></div>
+  <div class="bg-blur bg-blur-2"></div>
+
+  <main class="container inner-page">
+    <section class="glass panel reveal dashboard-header">
+      <h1>Admin Dashboard</h1>
+      <p>View all contact submissions securely.</p>
+      <button id="logoutBtn" class="btn btn-outline">Logout</button>
+    </section>
+
+    <section class="glass panel reveal-delay">
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Message</th>
+              <th>Submitted At</th>
+            </tr>
+          </thead>
+          <tbody id="entriesTableBody"></tbody>
+        </table>
+      </div>
+      <p id="dashboardStatus" class="status-text" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <script src="js/main.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+</html>

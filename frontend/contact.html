@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Amandeep Singh</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="bg-blur bg-blur-1"></div>
+  <div class="bg-blur bg-blur-2"></div>
+
+  <header class="site-header glass">
+    <nav class="container nav">
+      <a class="brand" href="index.html">Amandeep Singh</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle Menu">Menu</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="admin-login.html">Admin</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container inner-page">
+    <section class="glass panel reveal">
+      <h1>Contact Me</h1>
+      <p>Feel free to send your message for collaboration, internship opportunities, freelance work, or networking.</p>
+    </section>
+
+    <section class="glass panel reveal-delay">
+      <form id="contactForm" class="contact-form">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required maxlength="80" />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required maxlength="120" />
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" required maxlength="2000"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+        <p id="contactStatus" class="status-text" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Amandeep Singh | All Rights Reserved</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+</html>
